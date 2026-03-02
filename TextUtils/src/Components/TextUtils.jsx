@@ -2,7 +2,7 @@ import { useState } from "react";
 
 //functional component
 const TextUtils = () => {
-  const [text, setText] = useState(""); // any text write here and that text show line 16
+  const [text, setText] = useState(""); 
   // onChange={(e)=>e.target.value} means output outside and any text write that show and store here .
   //text - text is a state where data will be stored 
   //setText - a method by which we can only change value of the state.
