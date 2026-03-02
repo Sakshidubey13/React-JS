@@ -23,27 +23,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ---
 
-## 🌐 Live Demo
 
-🔗 **Click Here to View Live Project**  
-👉 https://your-live-link-here.com  
-
-*(Upload on Vercel or Netlify and paste link above)*
-
----
-
-## 📸 Screenshot
-
-<p align="center">
-  <img src="https://via.placeholder.com/900x450.png?text=TextUtils+App+Screenshot" width="800"/>
-</p>
-
-> 📌 Replace this image with your project screenshot  
-> Save screenshot inside project folder and update path like:
->
-> `![App Screenshot](./screenshot.png)`
-
----
 
 ## ✨ Features
 
@@ -73,3 +53,31 @@ If you are developing a production application, we recommend using TypeScript wi
 ---
 
 ## 📂 Project Structure
+
+src/
+├── Components/
+│ └── TextUtils.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+
+
+---
+
+## 🧠 How It Works
+
+- Uses **useState** for managing text & counters  
+- Uses **useEffect** for loading Local Storage data  
+- Calculates reading time (200 words/min)  
+- Real-time UI updates  
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/textutils.git
+cd textutils
+npm install
+npm run dev
