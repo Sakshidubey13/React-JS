@@ -39,12 +39,12 @@
 ## 📂 Project Structure
 
 src/
-├── Components/
+├── Components/<br>
 │ └── TextUtils.jsx
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
+├── App.jsx<br>
+├── App.css<br>
+├── index.css<br>
+└── main.jsx<br>
 
 
 ---
