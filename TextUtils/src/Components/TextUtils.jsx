@@ -20,9 +20,11 @@ const TextUtils = () => {
         <div className="m-3">
           <div className="form-floating">
             <textarea
+                value={text}
               onChange={(e) => setText(e.target.value)} // onChange tab change hoga jab textarea mein kuch bhi ek letter bhi change hoga
               //onChange - get value entered in input filled on every change (input,type)
-
+              //  onChange={(e) => setText(e.target.value)} => that ocure a storing value .
+              
               className="form-control"
               placeholder="Leave a comment here"
               id="floatingTextarea2"
@@ -70,6 +72,13 @@ const TextUtils = () => {
             Check Reading Time
           </button>
 
+          <button onClick={()=>{
+            setText("");
+            setCount(0);
+            setCountWords(0);
+            setSecond(0);
+          }}  className="mx-1 btn btn-danger"> Clear Text</button>
+
         </div>
 
         <hr />
@@ -78,6 +87,7 @@ const TextUtils = () => {
           <p> {text}</p>
           <p>Text Count : {count}</p>
           <p>Word Count : {countWords}</p>
+          <p>Reading Time : {second} s</p>
         </div>
       </div>
     </>
