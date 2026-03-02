@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 //functional component
 const TextUtils = () => {
+  // component render (get all element )
+  useEffect(() => {
+    setText(localStorage.getItem("text"));
+    setCount(localStorage.getItem("count"));
+    setCountWords(localStorage.getItem("words"));
+    setSecond(localStorage.getItem("second"));
+  }, []);
+
   const [text, setText] = useState("");
   // onChange={(e)=>e.target.value} means output outside and any text write that show and store here .
   //text - text is a state where data will be stored
@@ -20,11 +28,15 @@ const TextUtils = () => {
         <div className="m-3">
           <div className="form-floating">
             <textarea
-                value={text}
-              onChange={(e) => setText(e.target.value)} // onChange tab change hoga jab textarea mein kuch bhi ek letter bhi change hoga
+              value={text}
+              onChange={(e) => {
+                setText(e.target.value);
+
+                //local stoorage storing data (work)
+                localStorage.setItem("text", text);
+              }} // onChange tab change hoga jab textarea mein kuch bhi ek letter bhi change hoga
               //onChange - get value entered in input filled on every change (input,type)
               //  onChange={(e) => setText(e.target.value)} => that ocure a storing value .
-              
               className="form-control"
               placeholder="Leave a comment here"
               id="floatingTextarea2"
@@ -37,32 +49,51 @@ const TextUtils = () => {
         <div className="px-3">
           {/*onClick={() => alert(text)} in that koi bhi text show karna hai button ke click ke upper tab ye usse hoga than alert massage will be open it*/}
           <button
-            onClick={() => setText(text.toUpperCase())}
+            onClick={() => {
+              setText(text.toUpperCase());
+              localStorage.setItem("text", text.toUpperCase());
+            }}
             className=" mx-1 btn btn-primary"
           >
             To UpperCase
           </button>
+
           <button
-            onClick={() => setText(text.toLowerCase())}
+            onClick={() => {
+              setText(text.toLowerCase());
+              localStorage.setItem("text", text.toLowerCase());
+            }}
             className=" mx-1 btn btn-warning"
           >
             To LowerCase
           </button>
+
           <button
-            onClick={() => setCount(text.length)}
+            onClick={() => {
+              setCount(text.length);
+              localStorage.setItem("count", count.toString()); //local storage storeing a value a in( key : value) pair
+            }}
             className=" mx-1 btn btn-info"
           >
             Count Letters
           </button>
+
           <button
-            onClick={() => setCountWords(text.split(" ").length)}
+            onClick={() => {
+              setCountWords(text.split(" ").length);
+              localStorage.setItem("words", countWords.toString()); // in local storage store a words in key value pair
+            }}
             className=" mx-1 btn btn-success"
           >
             Count Words
           </button>
+
           <button
-            onClick={() => setSecond((text.split(" ").length * 60)/200)}
-            //text.split(" ").length => total words count 
+            onClick={() => {
+              setSecond((text.split(" ").length * 60) / 200);
+              localStorage.setItem("second", second.toString());
+            }}
+            //text.split(" ").length => total words count
             // 200 -> 60
             //n->   ?
             // n* 60 /200
@@ -72,13 +103,18 @@ const TextUtils = () => {
             Check Reading Time
           </button>
 
-          <button onClick={()=>{
-            setText("");
-            setCount(0);
-            setCountWords(0);
-            setSecond(0);
-          }}  className="mx-1 btn btn-danger"> Clear Text</button>
-
+          <button
+            onClick={() => {
+              setText("");
+              setCount(0);
+              setCountWords(0);
+              setSecond(0);
+            }}
+            className="mx-1 btn btn-danger"
+          >
+            {" "}
+            Clear Text
+          </button>
         </div>
 
         <hr />
@@ -87,7 +123,7 @@ const TextUtils = () => {
           <p> {text}</p>
           <p>Text Count : {count}</p>
           <p>Word Count : {countWords}</p>
-          <p>Reading Time : {second} s</p>
+          <p>Reading Time : {second}s</p>
         </div>
       </div>
     </>
