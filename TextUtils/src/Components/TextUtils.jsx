@@ -2,13 +2,13 @@ import { useState } from "react";
 
 //functional component
 const TextUtils = () => {
-  const [text, setText] = useState(""); 
+  const [text, setText] = useState("");
   // onChange={(e)=>e.target.value} means output outside and any text write that show and store here .
-  //text - text is a state where data will be stored 
+  //text - text is a state where data will be stored
   //setText - a method by which we can only change value of the state.
-  const [count,setCount] = useState(0);
+  const [count, setCount] = useState(0);
   const [countWords, setCountWords] = useState(0);
-
+  const [second, setSecond] = useState(0);
 
   return (
     <>
@@ -33,30 +33,52 @@ const TextUtils = () => {
         </div>
 
         <div className="px-3">
-             {/*onClick={() => alert(text)} in that koi bhi text show karna hai button ke click ke upper tab ye usse hoga than alert massage will be open it*/}
-          <button onClick={()=>setText(text.toUpperCase())} className=" mx-1 btn btn-primary">   
-           To UpperCase 
+          {/*onClick={() => alert(text)} in that koi bhi text show karna hai button ke click ke upper tab ye usse hoga than alert massage will be open it*/}
+          <button
+            onClick={() => setText(text.toUpperCase())}
+            className=" mx-1 btn btn-primary"
+          >
+            To UpperCase
           </button>
-           <button onClick={()=>setText(text.toLowerCase())} className=" mx-1 btn btn-warning">   
-           To LowerCase 
+          <button
+            onClick={() => setText(text.toLowerCase())}
+            className=" mx-1 btn btn-warning"
+          >
+            To LowerCase
           </button>
-          <button onClick={()=>setCount(text.length)} className=" mx-1 btn btn-info">   
-           Count Letters 
+          <button
+            onClick={() => setCount(text.length)}
+            className=" mx-1 btn btn-info"
+          >
+            Count Letters
           </button>
-           <button onClick={()=>setCountWords(text.split(" ").length)} className=" mx-1 btn btn-success">   
-           Count Words 
+          <button
+            onClick={() => setCountWords(text.split(" ").length)}
+            className=" mx-1 btn btn-success"
+          >
+            Count Words
           </button>
+          <button
+            onClick={() => setSecond((text.split(" ").length * 60)/200)}
+            //text.split(" ").length => total words count 
+            // 200 -> 60
+            //n->   ?
+            // n* 60 /200
+            //
+            className=" mx-1 btn btn-secondary"
+          >
+            Check Reading Time
+          </button>
+
         </div>
 
         <hr />
         {/* // state ki value change jo textarea mein hai vo nitche bhi show hoga */}
         <div>
-
-           <p> {text}</p>
-            <p>Text Count : {count}</p>
-            <p>Word Count : {countWords}</p>
-
-            </div>
+          <p> {text}</p>
+          <p>Text Count : {count}</p>
+          <p>Word Count : {countWords}</p>
+        </div>
       </div>
     </>
   );
@@ -65,4 +87,4 @@ const TextUtils = () => {
 export default TextUtils;
 
 //display text.
-//display 
+//display
