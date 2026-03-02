@@ -120,10 +120,14 @@ const TextUtils = () => {
         <hr />
         {/* // state ki value change jo textarea mein hai vo nitche bhi show hoga */}
         <div>
-          <p> {text}</p>
-          <p>Text Count : {count}</p>
-          <p>Word Count : {countWords}</p>
-          <p>Reading Time : {second}s</p>
+          <hr />
+
+          <div className="result-box">
+            <p>{text}</p>
+            <p>Text Count : {count}</p>
+            <p>Word Count : {countWords}</p>
+            <p>Reading Time : {second}s</p>
+          </div>
         </div>
       </div>
     </>
