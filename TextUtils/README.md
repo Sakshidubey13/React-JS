@@ -38,7 +38,7 @@
 
 ## 📂 Project Structure
 
-src/
+src/<br>
 ├── Components/<br>
 │ └── TextUtils.jsx<br>
 ├── App.jsx<br>
