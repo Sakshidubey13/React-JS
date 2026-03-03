@@ -66,6 +66,10 @@ cd textutils
 npm install
 npm run dev
 
+
+
+
 ## 🎥 Demo Video
 
-https://drive.google.com/file/d/160BLSEUET8jvM_Yd3WQEozGcy71HBZX1/view?usp=sharing
+https://github.com/user-attachments/assets/f651dee8-0a58-4b89-8510-9de04ffe17fd
+
