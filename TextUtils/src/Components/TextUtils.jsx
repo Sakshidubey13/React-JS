@@ -71,7 +71,7 @@ const TextUtils = () => {
           <button
             onClick={() => {
               setCount(text.length);
-              localStorage.setItem("count", count.toString()); //local storage storeing a value a in( key : value) pair
+              localStorage.setItem("count", count.toString()); 
             }}
             className=" mx-1 btn btn-info"
           >
@@ -81,7 +81,7 @@ const TextUtils = () => {
           <button
             onClick={() => {
               setCountWords(text.split(" ").length);
-              localStorage.setItem("words", countWords.toString()); // in local storage store a words in key value pair
+              localStorage.setItem("words", countWords.toString()); 
             }}
             className=" mx-1 btn btn-success"
           >
