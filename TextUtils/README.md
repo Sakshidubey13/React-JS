@@ -1,4 +1,4 @@
-
+<img width="1710" height="799" alt="image" src="https://github.com/user-attachments/assets/5ed44004-ada3-4706-9222-dbc51f99632e" />
 # 🚀 TextUtils - React Text Analyzer App  
 
 <p align="center">
@@ -40,7 +40,7 @@
 
 src/
 ├── Components/<br>
-│ └── TextUtils.jsx
+│ └── TextUtils.jsx<br>
 ├── App.jsx<br>
 ├── App.css<br>
 ├── index.css<br>
@@ -65,3 +65,6 @@ git clone https://github.com/your-username/textutils.git
 cd textutils
 npm install
 npm run dev
+
+Video
+https://drive.google.com/file/d/160BLSEUET8jvM_Yd3WQEozGcy71HBZX1/view?usp=sharing
