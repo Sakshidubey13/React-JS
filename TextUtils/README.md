@@ -72,7 +72,7 @@ npm run dev
 
 
 
-https://github.com/user-attachments/assets/1503ff06-cb62-4471-aa91-ef1218299fb2
+
 
 
 
