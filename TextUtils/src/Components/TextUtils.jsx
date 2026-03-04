@@ -12,7 +12,7 @@ const TextUtils = () => {
 
   const [text, setText] = useState("");
   // onChange={(e)=>e.target.value} means output outside and any text write that show and store here .
-  //text - text is a state where data will be stored
+  //text - text is a state wh
   //setText - a method by which we can only change value of the state.
   const [count, setCount] = useState(0);
   const [countWords, setCountWords] = useState(0);
