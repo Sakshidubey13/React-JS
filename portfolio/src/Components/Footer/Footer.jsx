@@ -15,7 +15,7 @@ function Contact() {
         <textarea
           placeholder="Your Message"
           className="form-control my-2"
-        />
+        ></textarea>
 
         <button className="btn btn-primary">Send Message</button>
       </form>
