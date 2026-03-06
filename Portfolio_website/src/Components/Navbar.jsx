@@ -85,7 +85,9 @@ const darkColors = {
             ))}
           </div>
 
-          
+          <div className="flex items-center space-x-2 ">
+            {/* dark mode toogle 14:33 */}
+          </div>
         </div>
       </motion.nav>
     </div>
