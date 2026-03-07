@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
@@ -19,6 +20,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   textPrimary: "text-gray-900",
   textSecondary: "text-gray-700",
   textActive: "text-orange-500",
+    indicator: "bg-orange-500"
 };
 
 //darkmode
@@ -27,6 +29,7 @@ const darkColors = {
   textPrimary: "text-white",
   textSecondary: "text-gray-300",
   textActive: "text-orange-400",
+   indicator: "bg-orange-400"
 };
   const colors = darkMode ? darkColors : lightColors;
 
@@ -77,7 +80,7 @@ const darkColors = {
                 <motion.div
                 layoutId="navbar-indicator"
                 className={`absolute -bottom-1 left-0
-                    rigth-0 h-0.5 bg-linear-to-r rounded-full 
+                    right-0 h-0.5 bg-gradient-to-r rounded-full 
                     ${colors.indicator}`}>
               </motion.div>
                )}
@@ -94,13 +97,18 @@ const darkColors = {
             className={`p-2 rounded-full ${darkMode ? 'bg-gray-700'
               :'bg-gray-200'
             }transition-colors`}
-               
-
-            
-            >
-
+               aria-label={darkMode ? 'Switch to light mode'
+                :'Switch to dark mode'
+               }>
+                {darkMode ? (
+                  <Sun className="w-5 h-5 text-yellow-300"/>
+                ):
+                (
+                  <Moon className="w-5 h-5 text-gray-700"/>
+                )}
             </motion.button>
 
+                
           </div>
         </div>
       </motion.nav>
