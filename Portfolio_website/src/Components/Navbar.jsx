@@ -121,10 +121,26 @@ const darkColors = {
           </div>
              {/* Mobile Menu Button */}
              <div className="flex lg:hidden item-center space-x-4 px-2">
-              <motion.button>
-                
+              <motion.button 
+              whileTap={{scale:0.9}}
+              onClick={() => setIsMenuOPen(!isMenuOpen)}
+              className={`p-2 rounded-lg ${darkmMode
+                ? `bg-gray-700`
+                : `bg-gray-200
+                `
+              }`} >
+
+                {isMenuOpen ? (
+                  <X className={`w-5 h-5 ${darkMode
+                    ? `text-white`
+                    :`text-gray-700`
+                  }`}/>
+                ):(
+                  <Menu className={`w-5 `}/>
+                )}
               </motion.button>
              </div>
+
         </div>
       </motion.nav>
     </div>
