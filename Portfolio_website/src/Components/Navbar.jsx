@@ -86,7 +86,21 @@ const darkColors = {
           </div>
 
           <div className="flex items-center space-x-2 ">
-            {/* dark mode toogle 14:34*/}
+            {/* dark mode toogle*/}
+            <motion.button
+            whileHover={{scale:1.1}}
+            whileTap={{scale: 0.9}}
+            onClick={toggleDarkMode}
+            className={`p-2 rounded-full ${darkMode ? 'bg-gray-700'
+              :'bg-gray-200'
+            }transition-colors`}
+               
+
+            
+            >
+
+            </motion.button>
+
           </div>
         </div>
       </motion.nav>
