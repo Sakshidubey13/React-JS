@@ -108,8 +108,23 @@ const darkColors = {
                 )}
             </motion.button>
 
-                
+                {/* Button */}
+                <motion.a
+                   href="#contact"
+                   whileHover={{scale:1.05}}
+                   whileTap={{scale:0.95}}
+                   className={`hidden lg:block px-6 py-2 font-semibold
+                    rounded-full bg-linear-to-r ${colors.button}
+                    text-white shadow-md hover:shadow-lg transition-shadow`}>
+                    Hire Me       
+                </motion.a>
           </div>
+             {/* Mobile Menu Button */}
+             <div className="flex lg:hidden item-center space-x-4 px-2">
+              <motion.button>
+                
+              </motion.button>
+             </div>
         </div>
       </motion.nav>
     </div>
