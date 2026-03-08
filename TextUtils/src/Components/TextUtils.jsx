@@ -111,8 +111,7 @@ const TextUtils = () => {
               setCountWords(0);
               setSecond(0);
             }}
-            className="mx-1 btn btn-danger"
-          >
+            className="mx-1 btn btn-danger">
             {" "}
             Clear Text
           </button>
