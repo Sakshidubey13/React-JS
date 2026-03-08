@@ -53,8 +53,7 @@ const TextUtils = () => {
               setText(text.toUpperCase());
               localStorage.setItem("text", text.toUpperCase());
             }}
-            className=" mx-1 btn btn-primary"
-          >
+            className=" mx-1 btn btn-primary">
             To UpperCase
           </button>
           
