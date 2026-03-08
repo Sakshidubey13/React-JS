@@ -98,7 +98,7 @@ const TextUtils = () => {
             // 200 -> 60
             //n->   ?
             // n* 60 /200
-            //
+            
             className=" mx-1 btn btn-secondary"
           >
             Check Reading Time
