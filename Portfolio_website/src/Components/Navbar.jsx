@@ -42,13 +42,14 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <div className="flex justify-center w-full fixed z-50 mt-1 ">
-    <motion.nav
+    <div className="flex justify-center w-full fixed z-50 mt-0.3 ">
+   <motion.nav
   initial={{ y: -100 }}
   animate={{ y: 0 }}
   transition={{ duration: 0.5 }}
-  className={`flex items-center justify-between w-full max-w-6xl
-${colors.navBg} backdrop-blur-xl px-6 py-3 rounded-2xl shadow-xl`}
+  className={`flex items-center justify-between w-full ${colors.navBg}
+  backdrop-blur-lg px-4 lg:px-8 py-2 shadow-lg`}
+
 >
         <div className="flex items-center justify-between w-full space-x-6 lg:space-x-8">
           {/* Logo */}
@@ -57,8 +58,8 @@ ${colors.navBg} backdrop-blur-xl px-6 py-3 rounded-2xl shadow-xl`}
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <span className={`text-xl font-bold ${colors.textPrimary}`}>
-              Portfolio<span className="text-orange-500">.</span>
+            <span className={`text-xl font-bold ml-50 ${colors.textPrimary}`}>
+            Sakshi<span className="text-orange-500">.</span>
             </span>
           </motion.a>
 
@@ -199,8 +200,8 @@ ${colors.navBg} backdrop-blur-xl px-6 py-3 rounded-2xl shadow-xl`}
                           onClick={() =>setIsMenuOpen(false)}
                           whileTap={{scale:0.95}}
                          className={`hidden lg:block px-6 py-2 font-semibold
-rounded-full bg-gradient-to-r ${colors.button}
-text-white shadow-lg hover:scale-105 transition-all duration-300`}>          
+                               rounded-full bg-gradient-to-r ${colors.button}
+                                text-white shadow-lg hover:scale-105 transition-all duration-300`}>          
                                      Hire Me 
                         </motion.a>
                     </div>
