@@ -21,7 +21,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     textSecondary: "text-gray-700",
     textActive: "text-orange-500",
     indicator: "bg-orange-500",
-      button: "from-orange-400 to-orange-600"
+    button: "from-orange-400 to-orange-600",
   };
 
   // darkmode
@@ -31,7 +31,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     textSecondary: "text-gray-300",
     textActive: "text-orange-400",
     indicator: "bg-orange-400",
-      button: "from-orange-500 to-orange-700"
+    button: "from-orange-500 to-orange-700",
   };
 
   const colors = darkMode ? darkColors : lightColors;
@@ -43,14 +43,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <div className="flex justify-center w-full fixed z-50 mt-0.3 ">
-   <motion.nav
-  initial={{ y: -100 }}
-  animate={{ y: 0 }}
-  transition={{ duration: 0.5 }}
-  className={`flex items-center justify-between w-full ${colors.navBg}
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={`flex items-center justify-between w-full ${colors.navBg}
   backdrop-blur-lg px-4 lg:px-8 py-2 shadow-lg`}
-
->
+      >
         <div className="flex items-center justify-between w-full space-x-6 lg:space-x-8">
           {/* Logo */}
           <motion.a
@@ -59,7 +58,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             className="flex items-center space-x-2"
           >
             <span className={`text-xl font-bold ml-50 ${colors.textPrimary}`}>
-            Sakshi<span className="text-orange-500">.</span>
+              Sakshi<span className="text-orange-500">.</span>
             </span>
           </motion.a>
 
@@ -165,47 +164,52 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             className={`absolute top-full left-0 right-0 mt-2 lg:hidden 
                   ${darkMode ? "bg-gray-900/95" : "bg-white/95"} 
                   backdrop-blur-lg rounded-xl shadow-lg border${
-                    darkMode ? 'border-gray-700' : 'border-gray-200'
-                  }`}>
-                    <div className="px-4 py-3 space-y-2 ">
-                      {
-                        navItems.map((item) => (
-                           <a
-                           key={item.name}
-                          href={item.link}
-                          onClick={() => handleNewClick(item.name)}
-                          className="block">
-                            <motion.div
-                            whileHover={{x:5}}
-                            className={`py-3 px-4 rounded-lg text-center
+                    darkMode ? "border-gray-700" : "border-gray-200"
+                  }`}
+          >
+            <div className="px-4 py-3 space-y-2 ">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.link}
+                  onClick={() => handleNewClick(item.name)}
+                  className="block"
+                >
+                  <motion.div
+                    whileHover={{ x: 5 }}
+                    className={`py-3 px-4 rounded-lg text-center
                             ${
                               activeSection === item.name.toLowerCase()
-                              ? darkMode ? 'bg-gray-800':'bg-orange-50'
-                              :''
-
-                            }`}>
-                              <span
-                               className={`font-medium ${
-                                activeSection === item.name.toLowerCase()
-                                ?colors.textActive
-                                :colors.textSecondary
-                               }`}>
-                                {item.name}
-                               </span>
-                            </motion.div>
-                          </a>
-                        ))}
-                        <motion.a
-                          href="#contact"
-                          onClick={() =>setIsMenuOpen(false)}
-                          whileTap={{scale:0.95}}
-                         className={`hidden lg:block px-6 py-2 font-semibold
-                               rounded-full bg-gradient-to-r ${colors.button}
-                                text-white shadow-lg hover:scale-105 transition-all duration-300`}>          
-                                     Hire Me 
-                        </motion.a>
-                    </div>
+                                ? darkMode
+                                  ? "bg-gray-800"
+                                  : "bg-orange-50"
+                                : ""
+                            }`}
+                  >
+                    <span
+                      className={`font-medium ${
+                        activeSection === item.name.toLowerCase()
+                          ? colors.textActive
+                          : colors.textSecondary
+                      }`}
+                    >
+                      {item.name}
+                    </span>
                   </motion.div>
+                </a>
+              ))}
+              <motion.a
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+                whileTap={{ scale: 0.95 }}
+                className={`hidden lg:block px-6 py-2 font-semibold
+                               rounded-full bg-gradient-to-r ${colors.button}
+                                text-white shadow-lg hover:scale-105 transition-all duration-300`}
+              >
+                Hire Me
+              </motion.a>
+            </div>
+          </motion.div>
         )}
       </motion.nav>
     </div>
