@@ -53,8 +53,7 @@ const TextUtils = () => {
               setText(text.toUpperCase());
               localStorage.setItem("text", text.toUpperCase());
             }}
-            className=" mx-1 btn btn-primary"
-          >
+            className=" mx-1 btn btn-primary">
             To UpperCase
           </button>
           
@@ -98,7 +97,7 @@ const TextUtils = () => {
             // 200 -> 60
             //n->   ?
             // n* 60 /200
-            //
+            
             className=" mx-1 btn btn-secondary"
           >
             Check Reading Time
@@ -111,8 +110,7 @@ const TextUtils = () => {
               setCountWords(0);
               setSecond(0);
             }}
-            className="mx-1 btn btn-danger"
-          >
+            className="mx-1 btn btn-danger">
             {" "}
             Clear Text
           </button>
