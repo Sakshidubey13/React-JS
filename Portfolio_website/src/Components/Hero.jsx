@@ -10,7 +10,7 @@ const Hero = () => {
   const socialIcons = [
     { icon: github, link: "https://github.com/Sakshidubey13" },
     { icon: linkedin, link: "https://www.linkedin.com/in/sakshi-dubey-7034bb381/" },
-    { icon: twitter, link: "https://twitter.com" },
+    { icon: twitter, link: "https://x.com/SakshiDubey1304" },
     { icon: youtube, link: "https://youtube.com" },
   ];
 
