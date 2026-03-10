@@ -9,7 +9,10 @@ import leetcode from "../assets/Leetcode.png";
 const Hero = () => {
   const socialIcons = [
     { icon: github, link: "https://github.com/Sakshidubey13" },
-    { icon: linkedin, link: "https://www.linkedin.com/in/sakshi-dubey-7034bb381/" },
+    {
+      icon: linkedin,
+      link: "https://www.linkedin.com/in/sakshi-dubey-7034bb381/",
+    },
     { icon: twitter, link: "https://x.com/SakshiDubey1304" },
     { icon: leetcode, link: "https://leetcode.com/u/Sakshiiidubey/" },
   ];
@@ -17,7 +20,7 @@ const Hero = () => {
   return (
     <section className="h-screen flex flex-col items-center justify-center text-center text-white relative z-10">
       <h1 className="text-5xl font-bold mb-4">
-        Hi, I'm <span className="text-orange-500">Sakshi</span>
+        Hi, I'm <span className="text-orange-500">Sakshi</span><span>Dubey</span>
       </h1>
 
       {/* Typing Animation */}
@@ -25,9 +28,9 @@ const Hero = () => {
       <h2 className="text-2xl mb-6">
         <ReactTyped
           strings={[
-            "I am MERN Stack Developer",
-            "I am Full Stack Developer",
-            "I build Modern Websites",
+            "MERN Stack Developer",
+            "Full Stack Developer",
+            "React Developer",
           ]}
           typeSpeed={60}
           backSpeed={40}
