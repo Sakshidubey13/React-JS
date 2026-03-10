@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
-
+import ParticlesBackground from "./Components/ParticlesBackground";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -24,14 +24,17 @@ const App = () => {
   };
 
   return (
-    <div className={
-      darkMode
-       ? 'bg-linear-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen'
-       : 'bg-linear-to-br from-gray-50 to-blue-50  min-h-screen'
-
+    <div className={darkMode
+      ? 'bg-gradient-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen'
+      : 'bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen'
     }>
+
+      <ParticlesBackground />
+
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero darkMode={darkMode}/>
+
+      <Hero darkMode={darkMode} />
+
     </div>
   );
 };

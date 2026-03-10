@@ -1,15 +1,61 @@
-import instagram from '..assets/'
+import React from "react";
+import { ReactTyped } from "react-typed";
 
-const Hero =()=>{
-    const socialIcons=[
-        {icon : instagram,alt:'Instagram'},
+import github from "../assets/github.png";
+import linkedin from "../assets/Linkdin.png";
+import twitter from "../assets/Twitter.png";
+import youtube from "../assets/Youtube.jpg";
 
-    ]
-    return (
-        <div>Hero</div>
+const Hero = () => {
+  const socialIcons = [
+    { icon: github, link: "https://github.com/Sakshidubey13" },
+    { icon: linkedin, link: "https://www.linkedin.com/in/sakshi-dubey-7034bb381/" },
+    { icon: twitter, link: "https://twitter.com" },
+    { icon: youtube, link: "https://youtube.com" },
+  ];
 
-    )
-}
+  return (
+    <section className="h-screen flex flex-col items-center justify-center text-center text-white relative z-10">
+      <h1 className="text-5xl font-bold mb-4">
+        Hi, I'm <span className="text-orange-500">Sakshi</span>
+      </h1>
 
+      {/* Typing Animation */}
+
+      <h2 className="text-2xl mb-6">
+        <ReactTyped
+          strings={[
+            "I am MERN Stack Developer",
+            "I am Full Stack Developer",
+            "I build Modern Websites",
+          ]}
+          typeSpeed={60}
+          backSpeed={40}
+          backDelay={1500}
+          loop
+        />
+      </h2>
+
+      <p className="max-w-xl text-gray-300 mb-6">
+        Passionate Full Stack Developer creating modern and responsive web
+        applications using MERN stack.
+      </p>
+
+      {/* Social Icons */}
+
+      <div className="flex gap-6">
+        {socialIcons.map((item, index) => (
+          <a key={index} href={item.link}>
+            <img
+              src={item.icon}
+              alt="social"
+              className="w-8 hover:scale-125 transition"
+            />
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Hero;
