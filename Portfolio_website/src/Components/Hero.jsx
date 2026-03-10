@@ -4,14 +4,14 @@ import { ReactTyped } from "react-typed";
 import github from "../assets/github.png";
 import linkedin from "../assets/Linkdin.png";
 import twitter from "../assets/Twitter.png";
-import youtube from "../assets/Youtube.jpg";
+import leetcode from "../assets/Leetcode.png";
 
 const Hero = () => {
   const socialIcons = [
     { icon: github, link: "https://github.com/Sakshidubey13" },
     { icon: linkedin, link: "https://www.linkedin.com/in/sakshi-dubey-7034bb381/" },
     { icon: twitter, link: "https://x.com/SakshiDubey1304" },
-    { icon: youtube, link: "https://youtube.com" },
+    { icon: leetcode, link: "https://leetcode.com/u/Sakshiiidubey/" },
   ];
 
   return (
