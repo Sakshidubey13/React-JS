@@ -19,7 +19,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="h-screen flex items-center justify-center text-white relative z-10 px-10">
+    <section  id="home" className="h-screen flex items-center justify-center text-white relative z-10 px-10">
       {/* Main Container */}
       <div className="flex items-center justify-between w-full max-w-7xl">
         {/* LEFT SIDE TEXT */}
@@ -32,7 +32,7 @@ const Hero = () => {
           <h2 className="text-2xl mb-6">
             <ReactTyped
               strings={[
-                "MERN Stack Developer",
+                "MERN Stack Developer.",
                 "Full Stack Developer",
                 "React Developer",
               ]}
