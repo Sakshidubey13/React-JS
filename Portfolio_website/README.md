@@ -10,18 +10,7 @@ This portfolio showcases my projects, skills, and contact information as a **Ful
 
 ---
 
-## 🚀 Live Demo
 
-🌐 Live Website  
-https://your-portfolio-link.com
-
----
-
-## 🖼️ Screenshot
-
-![Portfolio Screenshot](./src/assets/portfolio-preview.png)
-
----
 
 ## ✨ Features
 
