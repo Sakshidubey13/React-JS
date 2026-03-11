@@ -3,7 +3,7 @@
 https://github.com/user-attachments/assets/974e0f41-22fb-4c1c-8caa-0dfc7ac4af69
 
 
-# 💼 Sakshi Dubey - Developer Portfolio
+# 💼  Developer Portfolio
 
 A modern and responsive **Developer Portfolio Website** built using **React.js**.  
 This portfolio showcases my projects, skills, and contact information as a **Full Stack MERN Developer**.
