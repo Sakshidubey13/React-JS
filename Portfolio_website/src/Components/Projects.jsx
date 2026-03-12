@@ -1,57 +1,30 @@
-import { motion } from "framer-motion";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    desc: "Modern portfolio built with React and Tailwind."
+    title: "E-commerce Product Webpage",
+    desc: "A full-featured ecommerce platform built with HTML, CSS, JavaScript and Bootstrap.",
+    image: project1,
+    tech: ["JavaScript", "Bootstrap"],
+    live: "https://fabulous-lolly-44036c.netlify.app/",
+    github: "https://github.com/Sakshidubey13/JavaScript/tree/main/JavaScript/API(Application%20Program%20Interface)/E-commercee"
   },
   {
-    title: "TextUtils App",
-    desc: "React app for text utilities and manipulation."
+    title: "Product Management",
+    desc: "Productivity app for managing tasks with drag and drop.",
+    image: project2,
+    tech: ["JavaScript", "TailwindCSS"],
+    live: "https://producttcurd.netlify.app/",
+    github: "https://github.com/Sakshidubey13/JavaScript/tree/main/JavaScript/Praticle%20Exam"
   },
   {
-    title: "Todo App",
-    desc: "Task management application with local storage."
+    title: "TextUtils",
+    desc: "Multiple choice quiz with score tracking.",
+    image: project3,
+    tech: ["JavaScript", "CSS3"],
+    live: "https://dancing-semifreddo-594bae.netlify.app/",
+    github: "https://github.com/Sakshidubey13/React-JS/tree/main/TextUtils"
   }
 ];
-
-const Projects = () => {
-  return (
-    <section id="projects" className="min-h-screen px-8 py-20 text-white">
-
-      <h2 className="text-4xl font-bold text-center mb-16">
-        My <span className="text-orange-500">Projects</span>
-      </h2>
-
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-        {projects.map((project, index) => (
-
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            className="bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-white/10 shadow-xl"
-          >
-
-            <h3 className="text-xl font-semibold mb-3">
-              {project.title}
-            </h3>
-
-            <p className="text-gray-300 mb-4">
-              {project.desc}
-            </p>
-
-            <button className="px-4 py-2 bg-orange-500 rounded">
-              View Project
-            </button>
-
-          </motion.div>
-
-        ))}
-
-      </div>
-    </section>
-  );
-};
-
-export default Projects;
