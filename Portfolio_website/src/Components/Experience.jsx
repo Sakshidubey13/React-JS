@@ -23,7 +23,7 @@ const Experience = () => {
     <section id="experience" className="min-h-screen px-8 py-20 text-white">
 
       <h2 className="text-4xl font-bold text-center mb-16">
-        My <span className="text-orange-500">Journey</span>
+        My <span className="text-orange-500">Education</span>
       </h2>
 
       <div className="max-w-3xl mx-auto border-l-2 border-orange-500 pl-8 space-y-10">

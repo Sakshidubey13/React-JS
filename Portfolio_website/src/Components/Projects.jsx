@@ -114,7 +114,7 @@ const Projects = () => {
               </div>
 
               {/* Links */}
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-4">
 
                 <a
                   href={project.live}
