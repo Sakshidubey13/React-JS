@@ -18,9 +18,9 @@ const experiences = [
   }
 ];
 
-const Experience = () => {
+const Education = () => {
   return (
-    <section id="experience" className="min-h-screen px-8 py-20 text-white">
+    <section id="education" className="min-h-screen px-8 py-20 text-white">
 
       <h2 className="text-4xl font-bold text-center mb-16">
         My <span className="text-orange-500">Education</span>
@@ -59,4 +59,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;

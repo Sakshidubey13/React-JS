@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import ParticlesBackground from "./Components/ParticlesBackground";
 import About from "./Components/About";
-import Experience from "./Components/Experience";
+import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
@@ -43,7 +43,7 @@ const App = () => {
       <Hero darkMode={darkMode} />
 
       <About  darkMode={darkMode} />
-      <Experience darkMode={darkMode} />
+      <Education darkMode={darkMode} />
       <Skills darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       {/*<Github darkMode={darkMode} />*/}

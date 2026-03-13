@@ -19,7 +19,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.6}
     );
 
     sections.forEach((sec) => observer.observe(sec));
@@ -28,7 +28,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }, []);
 
   // Nav Items
-  const navItems = ["home", "about", "skills", "projects", "contact"];
+  const navItems = ["home", "about","education", "skills", "projects", "contact"];
 
   // Light mode colors
   const lightColors = {
