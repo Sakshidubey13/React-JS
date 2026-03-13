@@ -13,7 +13,7 @@ const projects = [
     desc: "Responsive ecommerce website with product listings and cart system.",
     image: project1,
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    live: "https://fabulous-lolly-44036c.netlify.app/",
+    live: "https://e-commerceeweb.netlify.app/",
     github:
       "https://github.com/Sakshidubey13/JavaScript/tree/main/JavaScript/API(Application%20Program%20Interface)/E-commercee",
   },
