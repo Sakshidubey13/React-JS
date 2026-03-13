@@ -71,7 +71,7 @@ const Skills = () => {
 
             {/* glow effect */}
 
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition"></div>
+            {/*<div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition"></div>*/}
 
             {/* icon */}
 
