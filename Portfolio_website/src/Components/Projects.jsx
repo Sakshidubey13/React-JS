@@ -22,7 +22,7 @@ const projects = [
     desc: "CRUD product management system built using JavaScript and Tailwind.",
     image: project2,
     tech: ["JavaScript", "TailwindCSS"],
-    live: "https://producttcurd.netlify.app/",
+    live: "https://productcurd.netlify.app/",
     github:
       "https://github.com/Sakshidubey13/JavaScript/tree/main/JavaScript/Praticle%20Exam",
   },
@@ -31,7 +31,7 @@ const projects = [
     desc: "React application for text manipulation and analysis.",
     image: project3,
     tech: ["React", "CSS3","localStorage"],
-    live: "https://dancing-semifreddo-594bae.netlify.app/",
+    live: "https://textutiilss.netlify.app/",
     github:
       "https://github.com/Sakshidubey13/React-JS/tree/main/TextUtils",
   },
