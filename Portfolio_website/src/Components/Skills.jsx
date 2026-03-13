@@ -32,7 +32,7 @@ const skills = [
   { name: "CSS", icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
   { name: "JavaScript", icon: <FaJs className="text-yellow-400 text-4xl" /> },
 
-  { name: "React", icon: <FaReact className="text-cyan-400 text-4xl" /> },
+  { name: "React.js", icon: <FaReact className="text-cyan-400 text-4xl" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl" /> },
 
   { name: "MongoDB", icon: <SiMongodb className="text-green-400 text-4xl" /> },
@@ -41,7 +41,7 @@ const skills = [
   { name: "Git", icon: <FaGitAlt className="text-red-500 text-4xl" /> },
 
   { name: "Next.js", icon: <SiNextdotjs className="text-white text-4xl" /> },
-  { name: "Express", icon: <SiExpress className="text-gray-300 text-4xl" /> },
+  { name: "Express.js", icon: <SiExpress className="text-gray-300 text-4xl" /> },
 
 
   { name: "SQL", icon: <SiMysql className="text-blue-400 text-4xl" /> },
@@ -71,7 +71,7 @@ const Skills = () => {
 
             {/* glow effect */}
 
-            {/*<div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition"></div>*/}
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition"></div>
 
             {/* icon */}
 

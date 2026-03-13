@@ -1,20 +1,25 @@
 import { motion } from "framer-motion";
 
-const experiences = [
+const education = [
   {
-    year: "2024",
-    title: "Started Web Development",
-    desc: "Learned HTML, CSS and JavaScript."
+    year: "2023 - 2024",
+    title: "10th Standard",
+    desc: "Completed 10th A grade and developed interest in computer technology."
   },
   {
-    year: "2025",
-    title: "React Developer",
-    desc: "Built modern web apps using React."
+    year: "2025 - 2026",
+    title: "12th Standard",
+    desc: "Completed 12th A grade and started focusing on programming and web development."
   },
   {
-    year: "2026",
-    title: "MERN Stack Developer",
-    desc: "Working on full stack applications."
+    year: "2026 - Present",
+    title: "BCA - Vidhyadeep University",
+    desc: "Currently pursuing Bachelor of Computer Applications and learning Full Stack Web Development (Frontend & Backend)."
+  },
+  {
+    year: "2026 - Present",
+    title: "Full Stack Developer",
+    desc: "Learning MERN Stack and building real-time projects using React, Node.js, MongoDB and modern web technologies."
   }
 ];
 
@@ -28,25 +33,30 @@ const Education = () => {
 
       <div className="max-w-3xl mx-auto border-l-2 border-orange-500 pl-8 space-y-10">
 
-        {experiences.map((exp, index) => (
+        {education.map((edu, index) => (
 
           <motion.div
             key={index}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className="relative"
           >
 
+            {/* timeline dot */}
+
+            <div className="absolute -left-[34px] top-2 w-4 h-4 bg-orange-500 rounded-full"></div>
+
             <h3 className="text-xl font-semibold">
-              {exp.title}
+              {edu.title}
             </h3>
 
             <span className="text-orange-500">
-              {exp.year}
+              {edu.year}
             </span>
 
             <p className="text-gray-300 mt-2">
-              {exp.desc}
+              {edu.desc}
             </p>
 
           </motion.div>

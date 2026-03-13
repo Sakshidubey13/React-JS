@@ -9,6 +9,7 @@ import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 //import Github from "./Components/Github";
 
 
@@ -48,6 +49,7 @@ const App = () => {
       <Projects darkMode={darkMode} />
       {/*<Github darkMode={darkMode} />*/}
       <Contact darkMode={darkMode} />
+      <Footer darkMode={darkMode}/>
 
     </div>
   );

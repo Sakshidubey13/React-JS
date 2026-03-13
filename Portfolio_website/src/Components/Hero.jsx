@@ -5,7 +5,7 @@ import github from "../assets/github.png";
 import linkedin from "../assets/Linkdin.png";
 import twitter from "../assets/Twitter.png";
 import leetcode from "../assets/Leetcode.png";
-import profile from "../assets/Profile.png";
+import profile from "../assets/profile.png";
 
 const Hero = () => {
   const socialIcons = [
