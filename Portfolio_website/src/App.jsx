@@ -51,6 +51,7 @@ const App = () => {
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode}/>
 
+
     </div>
   );
 };
