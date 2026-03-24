@@ -1,10 +1,13 @@
 
 
-https://github.com/user-attachments/assets/4fdb0b02-8717-4d91-a689-dfd8102fb410
 
 
 🌟 Preview
 https://textutiilss.netlify.app/
+
+https://github.com/user-attachments/assets/22791f2c-6ee6-45a8-9eac-59bec48a42de
+
+
 
 # 🚀 TextUtils - React Text Analyzer App  
 
