@@ -3,7 +3,7 @@ Developer Portfolio
 🚀 A modern Full Stack Developer Portfolio built with React, Tailwind CSS, and Framer Motion.
 This portfolio showcases my projects, skills, education, and contact information.
 
-https://github.com/user-attachments/assets/7ca66d25-562a-4ef6-9c72-b7a19a0e8269
+https://github.com/user-attachments/assets/a8b30d2d-bc14-4520-8760-f7fa5c76371a
 
 🔗 Live Demo
 
