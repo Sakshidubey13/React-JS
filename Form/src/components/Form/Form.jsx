@@ -5,14 +5,19 @@ import React,{ useState } from "react";
 
 export default function Form() {
   //setuse -> value update.
-  const [user,setuser] = useState({});
-  const handleSubmit =()=>{ }
+  const [user,setUser] = useState({});
+  
+  const handleSubmit =()=>{ 
+    localStorage.setItem("user",JSON.stringify(user));//data convert in string to use stringify
+    alert("Form Submitted !!")
+  }
 
   return (
     <div style={{ height: "100vh" }} className=" position-relative">
       <div className="col-3 position-absolute top-50 start-50 translate-middle">
         <form onSubmit={handleSubmit}>
-          {/* name */}
+
+          {/* Full name */}
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Full Name
