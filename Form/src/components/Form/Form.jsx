@@ -1,33 +1,33 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 //array = is to store multiple value of same datatype.
 //object(hasmap) = to store multiple values of different data type or diffrent behavior.
 
-
 export default function Form() {
   //setuse -> value update.
-  const [user,setUser] = useState({});
-  
-  const handleSubmit =()=>{ 
-    localStorage.setItem("user",JSON.stringify(user));//data convert in string to use stringify
-    alert("Form Submitted !!")
-  }
+  const [user, setUser] = useState({});
+  const [check, setCheck] = useState(false);
+
+  const handleSubmit = () => {
+    localStorage.setItem("user", JSON.stringify(user)); //data convert in string to use stringify
+    alert("Form Submitted !!");
+  };
 
   return (
     <div style={{ height: "100vh" }} className=" position-relative">
       <div className="col-3 position-absolute top-50 start-50 translate-middle">
         <form onSubmit={handleSubmit}>
-
           {/* Full name */}
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Full Name
             </label>
             <input
-               onChange={(e) =>setUser({...user,name:e.target.value})}
+              onChange={(e) => setUser({ ...user, name: e.target.value })}
               type="text"
               className="form-control"
               id="name"
-              aria-describedby="emailHelp"/>
+              aria-describedby="emailHelp"
+            />
           </div>
 
           {/* email */}
@@ -36,28 +36,30 @@ export default function Form() {
               Email address
             </label>
             <input
-             onChange={(e) => setUser({...user,email:e.target.value})}
+              onChange={(e) => setUser({ ...user, email: e.target.value })}
               type="email"
               className="form-control"
               id="exampleInputEmail1"
-              aria-describedby="emailHelp"/>
+              aria-describedby="emailHelp"
+            />
 
-              <div id="emailHelp" className="form-text">
-                 We'll never share your email with anyone else.
-               </div>
-             </div>
+            <div id="emailHelp" className="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
 
-                {/* contact sec */}
-            <div className="mb-3">
+          {/* contact sec */}
+          <div className="mb-3">
             <label htmlFor="number" className="form-label">
-                Contact
+              Contact
             </label>
             <input
-                        onChange={(e) => setUser({...user,contact:e.target.value})}
+              onChange={(e) => setUser({ ...user, contact: e.target.value })}
               type="number"
               className="form-control"
               id="number"
-              aria-describedby="emailHelp"/>
+              aria-describedby="emailHelp"
+            />
           </div>
 
           {/* password */}
@@ -66,24 +68,29 @@ export default function Form() {
               Password
             </label>
             <input
-                        onChange={(e) => setUser({...user,password:e.target.value})}
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
               type="password"
               className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-           {/* submit */}
+          {/* submit */}
           <div className="mb-3 form-check">
             <input
               type="checkbox"
+              checked={check}
+              onChange={() => setCheck(!check)}
               className="form-check-input"
               id="exampleCheck1"
             />
             <label className="form-check-label" htmlFor="exampleCheck1">
-              Check me out
+              Check after reading all Terms & Condition
             </label>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className={`btn btn-primary ${check ? "" : "disabled"}`}
+          >
             Submit
           </button>
         </form>

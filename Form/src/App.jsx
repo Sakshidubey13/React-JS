@@ -1,21 +1,21 @@
-import React  from "react"
-import Form from "./components/Form/Form"
-import Navbar from "./components/Navbar/Navbar"
-import {Routes,Route} from 'react-router'
+import React from "react";
+import Form from "./components/Form/Form";
+import Navbar from "./components/Navbar/Navbar";
+import { Routes, Route } from "react-router";
+import Users from "./components/Users/Users";
 
-
-export default function App(){
-  return(
+export default function App() {
+  return (
     <div>
-      <Routes>
-        <Route path='/' element={<Form/>} />
-        <Route path='/users' element={<User/>}/>
-      </Routes>
       <Navbar/>
-     <Form />
-    
-      </div>
-  )
+      <Routes>
+        <Route path="/" element={<Form />} />
+        <Route path="/users" element={<Users />} />
+      </Routes>
+
+     
+    </div>
+  );
 }
 
-//routes ->way 
+//routes ->way
