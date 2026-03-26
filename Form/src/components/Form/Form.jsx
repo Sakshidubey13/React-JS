@@ -27,6 +27,8 @@ return (
           </label>
           <input
             onChange={(e) => setUser({ ...user, name: e.target.value })}
+      
+      
             type="text"
             className="form-control"
             id="name"
