@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
-import ProductCard from '../Product-Card/ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 
 export default function Home() {
 
@@ -9,13 +9,15 @@ export default function Home() {
     }, []);
 
     const [products, setProducts] = useState([]);
+
     //axios 
     const fetchProducts = async () => {
         const res = await axios.get("https://dummyjson.com/products");
         setProducts(res.data.products);
 
     }
-    
+
+
     const addTocart = (value) => {
         console.log("cakkk");
         

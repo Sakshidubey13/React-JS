@@ -1,14 +1,16 @@
 import React from 'react'
-import {Routes, Route} from 'react-router'
-import Home from './components/Home/Home'
-import Navbar from './components/Navbar/Navbar'
+import { Route, Routes } from 'react-router'
+import Home from "./components/Home/Home";
+import Cart from "./components/Cart/Cart";
+import DetailPage from './components/DetailPage/DetailPage';
 
 export default function App() {
   return (
     <div>
       <Routes>
-          <Route path='/' element={<Home/>} /> 
-          <Route path='/navbar' element={<Navbar/>}/> 
+        <Route path='/' element={<Home />} />
+        <Route path='/Cart' element={<Cart />} />
+        <Route path='/Detail' element={<DetailPage />} />
       </Routes>
     </div>
   )
