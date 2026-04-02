@@ -1,16 +1,110 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://github.com/user-attachments/assets/71771950-119e-4f73-a701-f214d2f661fa
 
-Currently, two official plugins are available:
+# Student Form Management System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A modern and responsive Student Form Management System built using React JS. This project allows users to add, manage, search, sort, and delete student records with an interactive and user-friendly interface.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* Add new student records
+* Display student details in card format
+* Search students by name
+* Sort records by fees:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Low to High
+  * High to Low
+* Remove student records
+* Responsive design for mobile and desktop
+* Clean and attractive UI
+* Dynamic rendering using React state
+* Reusable React components
+
+---
+
+## 🛠️ Tech Stack
+
+* React JS
+* JavaScript
+* HTML5
+* CSS3
+* Bootstrap
+* React Hooks (`useState`)
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Form.jsx
+│   ├── Home.jsx
+│   └── Users.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   └── Records.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## 📸 Project Preview
+
+* Student details are displayed in responsive cards
+* Search bar allows quick filtering
+* Sort buttons help organize fee structure
+* Remove button deletes specific student record instantly
+
+---
+
+## ⚙️ Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone <your-repository-link>
+cd student-form-management-system
+npm install
+npm run dev
+```
+
+---
+
+## 💡 Future Improvements
+
+* Add Edit Student functionality
+* Add Local Storage support
+* Add Dark Mode
+* Add Form Validation
+* Add Pagination
+* Add Student Profile Image Upload
+* Export Data to CSV/PDF
+* Add React Router pages
+* Add Toast Notifications
+* Add Confirmation Popup before Delete
+
+---
+
+## 📚 Concepts Used
+
+* React Components
+* Props
+* useState Hook
+* Event Handling
+* Conditional Rendering
+* Array Methods (`map`, `filter`, `sort`)
+* Form Handling
+* CRUD Operations
+* Responsive Design
+
+---
+
