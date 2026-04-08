@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
 
+// new..
+
 export default function home() {
   useEffect(()=>{
   fetchProducts();
