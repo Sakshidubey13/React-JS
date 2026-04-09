@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-
+import {users_api} from "../utils/api.js"
 
 export default function SignUp() {
 
@@ -10,7 +10,14 @@ export default function SignUp() {
     //api calling and network request
     //.post => to send data 
     const handleSignup = async() => {
-      axios.post("")
+       const res =  await axios.post( users_api,user)
+      // axios.post	(tweets_api,user)
+
+      if(res.status == 201){
+        alert("user signup successfully !!");
+      }else{
+        alert("can not signup user !");
+      }
     };
 
 
