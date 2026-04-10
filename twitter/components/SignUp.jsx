@@ -8,7 +8,6 @@ export default function SignUp() {
   const [user, setUser] = useState({});
 
   const handleSignup = async () => {
-    try {
       const res = await axios.post(users_api, user);
 
       if (res.status === 201) {
@@ -16,19 +15,15 @@ export default function SignUp() {
       } else {
         alert("Can not signup user !");
       }
-    } catch (error) {
-      console.log(error);
-      alert("Something went wrong!");
-    }
-  };
+    };
 
   return (
-   <div className="container  ">
+   <div className="container">
     <div className="container-fluid">
        <div
-      className="d-flex justify-content-center align-items-center h-100vh  overflow-hidden"
+      className="d-flex justify-content-center align-items-center h-100vh   overflow-hidden"
     >
-     <div className="container-fluid bg-white w-50 p-4 overflow-hidden rounded-5 shadow-lg ">
+     <div className="container-fluid bg-white w-50 p-4 overflow-hidden m-2 rounded-5 shadow-lg ">
        <div
         //className="bg-white h-100  p-5 rounded-5 overflow-hidden"
         //style={{
@@ -168,7 +163,7 @@ export default function SignUp() {
             />
           </div>
         </div>
-        
+
 
         {/* Button */}
         <div className="d-grid mb-4">
