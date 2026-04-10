@@ -77,8 +77,8 @@ export default function SignUp() {
           </label>
           <div
             className="input-group border border-info rounded-pill px-3 py-2"
-            style={{ borderWidth: "2px" }}
-          >
+            style={{ borderWidth: "2px" }}>
+
             <span className="input-group-text bg-transparent border-0">
               <FaUserAlt className="text-secondary" />
             </span>
@@ -100,8 +100,7 @@ export default function SignUp() {
           </label>
           <div
             className="input-group border border-info rounded-pill px-3 py-2"
-            style={{ borderWidth: "2px" }}
-          >
+            style={{ borderWidth: "2px" }}>
             <span className="input-group-text bg-transparent border-0">
               <FaEnvelope className="text-secondary" />
             </span>
@@ -124,8 +123,8 @@ export default function SignUp() {
           </label>
           <div
             className="input-group border border-info rounded-pill px-3 py-2"
-            style={{ borderWidth: "2px" }}
-          >
+            style={{ borderWidth: "2px" }}>
+              
             <span className="input-group-text bg-transparent border-0">
               <FaPhoneAlt className="text-secondary" />
             </span>
