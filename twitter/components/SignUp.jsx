@@ -168,6 +168,7 @@ export default function SignUp() {
             />
           </div>
         </div>
+        
 
         {/* Button */}
         <div className="d-grid mb-4">
