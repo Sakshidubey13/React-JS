@@ -188,6 +188,7 @@ export default function SignUp() {
           >
             Sign In &gt;
           </span>
+          
         </p>
       </div>
     </div>

@@ -1,6 +1,5 @@
 {
-  "tweets": [
-  ],
+  "tweets": [],
   "users": [
     {
       "name": "Sakshi Dubey",
@@ -23,6 +22,11 @@
       "phone": "78451549",
       "password": "12549",
       "id": "W2y_XWsQw8w"
+    },
+    {
+      "email": "sakshidubey134@gmail.com",
+      "password": "s879328jkjandkj",
+      "id": "E5NQq2LYr6I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
