@@ -8,8 +8,10 @@ export default function SignIn() {
   const handleSignIn = async () => {
     const res = await axios.get(users_api);
     const loginUser = res.data.find((e) => e.email == user.email && e.password == user.password )
-    localStorage.setItem("current-user",JSON.stringify(loginUSer));
+    localStorage.setItem("current-user",JSON.stringify(loginUser));
   };
+
+  
   return (
     <div>
       <input
@@ -19,7 +21,7 @@ export default function SignIn() {
       />
       <input
         type="text"
-        placeholder="password"
+        placeholder="Password"
         onChange={(e) => setUser({ ...user, password: e.target.value })}
       />
       <button onClick={handleSignIn}>SignIn</button>
