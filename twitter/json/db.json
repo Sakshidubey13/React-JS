@@ -41,6 +41,14 @@
       "phone": "7412589630",
       "password": "125689",
       "id": "hjM9dz8EA-Q"
+    },
+    {
+      "name": "sakshi",
+      "lastName": "s",
+      "email": "sakshiiidubey78@gmail.com",
+      "phone": "9741526308",
+      "password": "1234",
+      "id": "ghrxaWCI2ug"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
