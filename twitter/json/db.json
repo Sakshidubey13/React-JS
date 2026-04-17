@@ -1,5 +1,24 @@
 {
-  "tweets": [],
+  "tweets": [
+    {
+      "text": "New tweets",
+      "user": "Sakshi",
+      "createdAt": "17/04/2026 03:21PM",
+      "id": "gIYQJOORDlE"
+    },
+    {
+      "text": "hii",
+      "user": "ayush8932@gmail.com",
+      "createdAt": "17/3/2026  16:16",
+      "id": "BCJPik9ND6A"
+    },
+    {
+      "text": "start",
+      "user": "ayush8932@gmail.com",
+      "createdAt": "17/3/2026  16:22",
+      "id": "K2iT8DD7bMU"
+    }
+  ],
   "users": [
     {
       "name": "Sakshi Dubey",
@@ -16,17 +35,12 @@
       "id": "mBcgwQLCiiU"
     },
     {
-      "name": "sakshii",
-      "lastName": "dubey",
-      "email": "sakshiiidubey1393@gmail.com",
-      "phone": "78451549",
-      "password": "12549",
-      "id": "W2y_XWsQw8w"
-    },
-    {
-      "email": "sakshidubey134@gmail.com",
-      "password": "s879328jkjandkj",
-      "id": "E5NQq2LYr6I"
+      "name": "jyoti",
+      "lastName": "suthar",
+      "email": "jyotisutha1223@gmail.com",
+      "phone": "7412589630",
+      "password": "125689",
+      "id": "hjM9dz8EA-Q"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
