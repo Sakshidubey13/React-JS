@@ -44,6 +44,7 @@ export default function HomePage() {
         <button onClick={handlePostTweet}>post</button>
       </div>
       <div>
+        
         {/* display tweets  */}
         {
              tweets.map((tweet) => (
