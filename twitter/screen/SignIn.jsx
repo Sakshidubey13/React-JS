@@ -26,7 +26,8 @@ export default function SignIn() {
     <div
       className="d-flex justify-content-center align-items-center vh-100" style={{background: "linear-gradient(135deg, #1DA1F2, #0d8ddb)", }}>
       <div
-        className="card p-5 shadow"
+        className="card p-5 shadow "
+
         style={{ width: "500px",height:"500px", borderRadius: "20px" }}>
         <div className="text-center mb-4">
           <FaTwitter size={60} color="#1DA1F2" />
