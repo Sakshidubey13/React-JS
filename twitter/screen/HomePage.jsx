@@ -89,14 +89,12 @@ export default function HomePage() {
               placeholder="What's happening?" 
             
               value={text}
-              onChange={(e) => setText(e.target.value)}
-            />
+              onChange={(e) => setText(e.target.value)}/>
 
             <div className="text-end mt-2">
               <button
                 onClick={handlePostTweet}
-                className="btn btn-primary rounded-pill px-4"
-              >
+                className="btn btn-primary rounded-pill px-4">
                 Tweet
               </button>
             </div>

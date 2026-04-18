@@ -19,7 +19,7 @@ export default function SignUp() {
   };
 
   return (
-    <div className="bg-success  " style={{background: "linear-gradient(135deg, #1DA1F2, #0d8ddb)", }}>
+    <div className=" " style={{background: "linear-gradient(135deg, #1DA1F2, #0d8ddb)", }}>
     <div className="container" >
       <div className="container-fluid" >
         <div className="d-flex justify-content-center align-items-center h-100vh overflow-hidden">

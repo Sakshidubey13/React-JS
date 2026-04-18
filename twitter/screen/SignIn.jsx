@@ -24,7 +24,7 @@ export default function SignIn() {
 
   return (
     <div
-      className="d-flex justify-content-center align-items-center vh-100" style={{background: "linear-gradient(135deg, #1DA1F2, #0d8ddb)", }}>
+      className="d-flex bg-black text-white justify-content-center align-items-center vh-100" style={{background: "linear-gradient(135deg, #1DA1F2, #0d8ddb)", }}>
       <div
         className="card p-5 shadow "
 
