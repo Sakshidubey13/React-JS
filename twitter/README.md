@@ -42,7 +42,10 @@ This project focuses on **frontend development + API handling + CRUD operations*
 | 🎯 React Icons | Icons        |
 
 ---
+## Video overview
+https://github.com/user-attachments/assets/b19bbdb4-5c1a-4d87-8742-b3709c8c50ed
 
+---
 ## 📸 Screenshots
 
 <div align="center">
