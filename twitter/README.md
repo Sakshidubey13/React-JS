@@ -47,7 +47,7 @@ This project focuses on **frontend development + API handling + CRUD operations*
 
 <div align="center">
 
-<img src="https://via.placeholder.com/800x400?text=Home+Page" width="80%" />
+<img src="https://github.com/user-attachments/assets/538c512e-95ba-49ab-8b37-e6a1a88e5a2f" width="80%" />
 <br/><br/>
 <img src="https://via.placeholder.com/800x400?text=Login+Page" width="80%" />
 <br/><br/>
