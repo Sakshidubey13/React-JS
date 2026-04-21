@@ -49,6 +49,8 @@ This project focuses on **frontend development + API handling + CRUD operations*
 
 <img src="https://github.com/user-attachments/assets/538c512e-95ba-49ab-8b37-e6a1a88e5a2f" width="80%" />
 <br/><br/>
+<img width="1899" height="915" alt="Screenshot 2026-04-21 132841" src="https://github.com/user-attachments/assets/b40870f6-5490-4c79-8f1c-376431098b11" />
+
 <img src="https://via.placeholder.com/800x400?text=Login+Page" width="80%" />
 <br/><br/>
 <img src="https://via.placeholder.com/800x400?text=Signup+Page" width="80%" />
