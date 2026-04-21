@@ -17,6 +17,18 @@
       "user": "ayush8932@gmail.com",
       "createdAt": "17/3/2026  16:22",
       "id": "K2iT8DD7bMU"
+    },
+    {
+      "text": "hiii ",
+      "user": "yashikadu134@gmail.com",
+      "createdAt": "21/4/2026 13:5",
+      "id": "iBoK_aqmFJA"
+    },
+    {
+      "text": "what's up ?",
+      "user": "yashikadu134@gmail.com",
+      "createdAt": "21/4/2026 13:6",
+      "id": "9qwAY3NZXt8"
     }
   ],
   "users": [
@@ -49,6 +61,14 @@
       "phone": "9741526308",
       "password": "1234",
       "id": "ghrxaWCI2ug"
+    },
+    {
+      "name": "yashika",
+      "lastName": "dubey",
+      "email": "yashikadu134@gmail.com",
+      "phone": "1245637898",
+      "password": "1234",
+      "id": "Sg6C-KHHbJI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -87,8 +87,7 @@ export default function HomePage() {
               type="text"
               className="form-control bg-dark text-white border-0"
               placeholder="What's happening?" 
-            
-              value={text}
+              value={text} 
               onChange={(e) => setText(e.target.value)}/>
 
             <div className="text-end mt-2">
@@ -144,3 +143,4 @@ export default function HomePage() {
     </div>
   );
 }
+
