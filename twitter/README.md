@@ -1,16 +1,133 @@
-# React + Vite
+# 🐦 Twitter Clone (React.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=1500&color=1DA1F2&center=true&vCenter=true&width=800&lines=Twitter+Clone+using+React.js;Clean+UI+%7C+Fast+%7C+Responsive;Built+by+Sakshi+Dubey+🚀" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<br/>
 
-## React Compiler
+![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge\&logo=react)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge\&logo=bootstrap)
+![Axios](https://img.shields.io/badge/Axios-API-yellow?style=for-the-badge)
+![JSON Server](https://img.shields.io/badge/Backend-JSON--Server-green?style=for-the-badge)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ About Project
+
+A **modern Twitter UI clone** built using **React.js**, featuring tweet posting, likes, authentication, and a responsive layout.
+This project focuses on **frontend development + API handling + CRUD operations**.
+
+---
+
+## 🚀 Features
+
+* 📝 Create & Post Tweets
+* 🔐 Login & Signup (LocalStorage based)
+* 👤 User-specific Tweets
+* 🎨 Clean & Responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology     | Use          |
+| -------------- | ------------ |
+| ⚛️ React.js    | Frontend     |
+| 🎨 Bootstrap   | UI Design    |
+| 🔗 Axios       | API Calls    |
+| 💾 JSON Server | Fake Backend |
+| 🎯 React Icons | Icons        |
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+<img src="https://via.placeholder.com/800x400?text=Home+Page" width="80%" />
+<br/><br/>
+<img src="https://via.placeholder.com/800x400?text=Login+Page" width="80%" />
+<br/><br/>
+<img src="https://via.placeholder.com/800x400?text=Signup+Page" width="80%" />
+
+</div>
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/twitter-clone.git
+cd twitter-clone
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run React App
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔌 Run Backend (JSON Server)
+
+```bash
+npm install -g json-server
+json-server --watch db.json --port 3000
+```
+
+---
+
+## 📂 Folder Structure
+
+```
+📦 twitter-clone
+ ┣ 📂 components
+ ┣ 📂 pages
+ ┣ 📂 utils
+ ┣ 📜 App.jsx
+ ┣ 📜 main.jsx
+ ┗ 📜 db.json
+```
+
+---
+
+## 🎯 What I Learned
+
+* React Hooks (useState, useEffect)
+* API Integration using Axios
+* CRUD Operations
+* Component-based Architecture
+* UI Design Principles
+
+---
+
+## ⚠️ Disclaimer
+
+> This project is built for learning purposes.
+> Authentication uses LocalStorage and is not secure for production use.
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+<div align="center">
+
+💙 Made with passion & React 🚀
+
+</div>
