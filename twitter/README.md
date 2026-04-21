@@ -46,14 +46,11 @@ This project focuses on **frontend development + API handling + CRUD operations*
 ## 📸 Screenshots
 
 <div align="center">
-
-<img src="https://github.com/user-attachments/assets/538c512e-95ba-49ab-8b37-e6a1a88e5a2f" width="80%" />
-<br/><br/>
 <img width="1899" height="915" alt="Screenshot 2026-04-21 132841" src="https://github.com/user-attachments/assets/b40870f6-5490-4c79-8f1c-376431098b11" />
-
-<img src="https://via.placeholder.com/800x400?text=Login+Page" width="80%" />
 <br/><br/>
-<img src="https://via.placeholder.com/800x400?text=Signup+Page" width="80%" />
+<img src="https://github.com/user-attachments/assets/538c512e-95ba-49ab-8b37-e6a1a88e5a2f" width="1899"  height="915" alt="Screenshot 2026-04-21 132841" />
+<br/><br/>
+<img width="1917" height="901" alt="Screenshot 2026-04-21 132810" src="https://github.com/user-attachments/assets/fcb87bce-8c1e-4db7-bd6b-b4b3bb06c64b" />
 
 </div>
 
