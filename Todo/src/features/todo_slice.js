@@ -5,10 +5,16 @@ const initialState = {
 };
 
 export const todoSlice = createSlice({
-  name: "todos",
+  name: "todo",
   initialState,
   reducers: {
-    
-    updateTodo: () => {},
+    add_todo: (state) => {
+      state.todo.push("Workout at 5pm");
+    },
+    remove_todo: (state) => {},
+    update_todo: (state) => {},
   },
 });
+
+export default todoSlice.reducer;
+export const { add_todo, remove_todo, update_todo } = todoSlice.actions;
