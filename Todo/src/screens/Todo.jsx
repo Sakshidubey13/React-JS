@@ -10,18 +10,26 @@ export default function Todo() {
   return (
     <div>
       <div>
-        <input type="text" placeholder="todo" onChange={(e)=>setText(e.target.value)}/>
-        <button onClick={() =>{
-          dispatch(addTodo({text, status:false}))
-        }}>
-            Add</button>
+        <input
+          type="text"
+          placeholder="todo"
+          onChange={(e) => setText(e.target.value)}
+        />
+        <button
+          onClick={() => {
+            dispatch(addTodo({ text, status: "false" }));
+          }}
+        >
+          Add
+        </button>
       </div>
 
       <div>
-        {
-        todoList.map((todo) => (
-           <p>{todo.text}</p>
-           <p>{todo.status}</p>
+        {todoList.map((todo, i) => (
+          <div key={i}>
+            <p>{todo.text}</p>
+            <p>{todo.status}</p>
+          </div>
         ))}
       </div>
     </div>

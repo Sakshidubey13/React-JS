@@ -9,8 +9,8 @@ export const todoSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state,actions) => { state.value.push(actions.payload) },
-    removeTodo: (state) => {},
-    updateTodo: (state) => {},
+    removeTodo: (state,actions) => {state.value.splice(actions.payload,1)},
+    updateTodo: (state,actions) => {},
   },
 });
 
