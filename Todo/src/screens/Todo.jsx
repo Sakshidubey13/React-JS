@@ -29,6 +29,7 @@ export default function Todo() {
           <div key={i}>
             <p>{todo.text}</p>
             <p>{todo.status}</p>
+            <button onClick={() => dispatch(removeTodo(i))}>-</button>
           </div>
         ))}
       </div>
