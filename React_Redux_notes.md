@@ -1,6 +1,6 @@
-Redux (Redux Toolkit) Interview Questions
-🔹 Basic Level
-❓1. What is Redux?
+Redux (Redux Toolkit) <br>
+🔹 Basic Level<br>
+❓1. What is Redux?<br>
 
 👉 Redux is a state management library used to manage application state in a predictable way.
 
