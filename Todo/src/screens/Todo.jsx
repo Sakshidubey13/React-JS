@@ -10,15 +10,22 @@ export default function Todo() {
   //  eslint-disable-next-line no-unused-vars
   const [text, setText] = useState("");
   return (
-    <div className="container">
-      <div className="d-flex justify-content-around">
-        <input className="w-50" type="text"/>
+    <div className="container d-flex justify-content-center">
+     <div className="col-9">
+       <div className="d-flex justify-content-around py-5 rounded shadow m-3">
+        <input placeholder="Workout, Read Book etc.." className="w-50" type="text"/>
          <button className="btn btn-primary w-25">Add Todo</button>
       </div>
-      <div>
+
+      <div style={{height:"600px"}} className="d-flex flex-column p-3 m-3 mt-5 rounded shadow">
+        <div className="p-4 m-2 rounded shadow ">
+          
+            <span className="fs-5">Workout at 5pm</span>
+          
+        </div>
 
       </div>
-    
+     </div>
     </div>
   )
 }
