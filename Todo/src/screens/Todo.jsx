@@ -13,7 +13,7 @@ export default function Todo() {
     <div className="container d-flex justify-content-center">
      <div className="col-9">
        <div className="d-flex justify-content-around py-5 rounded shadow m-3">
-        <input placeholder="Workout, Read Book etc.." className="w-50" type="text"/>
+        <input onChange={(e)=>setText(e.target.value)} placeholder="Workout, Read Book etc.." className="w-50 p-3" type="text"/>
          <button className="btn btn-primary w-25">Add Todo</button>
       </div>
 
