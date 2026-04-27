@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, removeTodo, updateTodo } from "../features/todo_slice.js";
+import { addTodo, removeTodo, updateTodo, } from "../features/todo_slice.js";
 import { markDone } from "../features/todo_slice.js";
 
 export default function Todo() {
