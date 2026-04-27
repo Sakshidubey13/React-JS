@@ -14,18 +14,19 @@ export default function Todo() {
      <div className="col-9">
        <div className="d-flex justify-content-around py-5 rounded shadow m-3">
         <input onChange={(e)=>setText(e.target.value)}  placeholder="Workout, Read Book etc.." className="w-50 p-3" type="text"/>
-         <button onChange={()=>dispatch(addTodo())} className="btn btn-primary w-25">Add Todo</button>
+         <button onChange={()=>dispatch(addTodo(text,status:false))} className="btn btn-primary w-25">Add Todo</button>
       </div>
       <div style={{height:"600px"}} className="d-flex flex-column p-3 m-3 mt-5 rounded shadow">
-        <div className="p-4 m-2 rounded shadow d-flex justify-content-between border border-danger">
-            <span className="fs-5">Workout at 5pm</span>
-            <span>
-              <button className="btn btn-warning mx-2">Edit</button>
-                <button className="btn btn-danger mx-2">Remove</button>
+        {
+          todoList.map((todo,i)=>  <div key={i} className="p-4 m-2 rounded shadow d-flex justify-content-between border border-danger">
+             <span className="fs-5">Workout at 5pm</span>
+              <span>
+                 <button className="btn btn-warning mx-2">Edit</button>
+                 <button className="btn btn-danger mx-2">Remove</button>
                  <button className="btn btn-success mx-2">Done</button>
             </span>
-        </div>
-
+        </div>)
+        }
       </div>
      </div>
     </div>
