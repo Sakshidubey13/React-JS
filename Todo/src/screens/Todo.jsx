@@ -7,15 +7,16 @@ export default function Todo() {
   const todoList = useSelector((state) => state.todo.value); // first todo  (todo: todoReducer,=> here is store.js) and second todo decrale for ( value: []=> here is todo_slice.js)
   const dispatch = useDispatch();
 
-  //  eslint-disable-next-line no-unused-vars
   const [text, setText] = useState("");
-  
+  const [isUpdate,setUpdate] = useState(false);
+
+
   return (
     <div className="container d-flex justify-content-center">
      <div className="col-9">
        <div className="d-flex justify-content-around py-5 rounded shadow m-3">
         <input value={text} onChange={(e)=>setText(e.target.value)}  placeholder="Workout, Read Book etc.." className="w-50 p-3" type="text"/>
-         <button onClick={()=>dispatch(addTodo({text,status:false}))} className="btn btn-primary w-25">Add Todo</button>
+         <button onClick={()=>dispatch(addTodo({text,status:false}))} className={`btn ${isUpdate?"btn-warning": "btn-primary"} w-25`}>{isUpdate?"updateTodo":"Add Todo"}</button>
       </div>
       <div style={{height:"600px"}} className="d-flex flex-column p-3 m-3 mt-5 rounded shadow">
         {
