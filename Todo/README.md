@@ -1,48 +1,35 @@
 # 📝 Todo App (React + Redux Toolkit)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Sakshidubey13/React-JS)
-![GitHub stars](https://img.shields.io/github/stars/Sakshidubey13/React-JS?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Sakshidubey13/React-JS?style=social)
-![License](https://img.shields.io/badge/license-MIT-green)
+A simple and clean Todo Application built using **React** and **Redux Toolkit**.
+This project demonstrates core concepts of state management, CRUD operations, and dynamic UI updates.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Features
 
-🔗 *Coming Soon*
-
----
-
-## 📌 Overview
-
-A modern **Todo Application** built using **React** and **Redux Toolkit** to manage tasks efficiently.
-This project focuses on clean UI, structured state management, and real-world development practices.
-
----
-
-## ✨ Features
-
-* ➕ Add new tasks
-* ✏️ Edit/update tasks
-* ❌ Delete tasks
-* ✅ Mark tasks as completed
+* ➕ Add new todos
+* ✏️ Update existing todos
+* ❌ Remove todos
+* ✅ Mark todos as completed (Done button)
 * 🎨 Dynamic UI (border color changes based on status)
-* ⚡ Global state management with Redux Toolkit
+* ⚡ Centralized state management using Redux Toolkit
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 Concepts Used
 
-* ⚛️ React
-* 🧰 Redux Toolkit
-* 🟨 JavaScript (ES6+)
-* 🎨 Bootstrap
+* React Functional Components
+* React Hooks (`useState`, `useSelector`, `useDispatch`)
+* Redux Toolkit (`createSlice`, `configureStore`)
+* State management (global store)
+* Conditional rendering
+* Event handling
 
 ---
 
-## 📂 Folder Structure
+## 📁 Project Structure
 
-```id="as8m2v"
+```
 src/
  ├── app/
  │    └── store.js
@@ -56,75 +43,36 @@ src/
 
 ---
 
-## ⚙️ Installation
+## 🛠️ Tech Stack
 
-```bash id="b0s7y1"
-# Clone the repository
-git clone https://github.com/Sakshidubey13/React-JS.git
-
-# Navigate into the project
-cd React-JS
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
+* React
+* Redux Toolkit
+* JavaScript (ES6+)
+* Bootstrap (for styling)
 
 ---
 
-## 🛠️ How It Works
+## 💡 How It Works
 
-* Todos are stored in a centralized Redux store
+* Todos are stored in Redux global state
 * Each todo contains:
 
   * `text`
   * `status` (true/false)
-* Clicking **Done** updates the status
-* UI automatically reflects state changes
+* Clicking **Done** sets status to true
+* UI updates dynamically:
+
+  * 🔴 Red border → Pending
+  * 🟢 Green border → Completed
 
 ---
 
-## 🎯 UI Behavior
+## 📌 Future Improvements
 
-| Status    | Border Color |
-| --------- | ------------ |
-| Pending   | 🔴 Red       |
-| Completed | 🟢 Green     |
-
----
-
-## 📸 Screenshots
-
-*Add your screenshots here*
-*(Tip: Upload image to GitHub → copy link → paste here)*
+* Add LocalStorage support
+* Add filtering (All / Completed / Pending)
+* Add search functionality
+* Improve UI/UX
 
 ---
-
-## 📈 Future Enhancements
-
-* 🔍 Search functionality
-* 📂 Filter (All / Completed / Pending)
-* 💾 LocalStorage support
-* 🌙 Dark mode
-* 🎨 Advanced UI/UX improvements
-
----
-
-## 👩‍💻 Author
-
-**Sakshi Dubey**
-🔗 GitHub: https://github.com/Sakshidubey13
-
----
-
-## ⭐ Support
-
-If you found this project helpful, please give it a ⭐ on GitHub!
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+If you like this project, give it a ⭐ on GitHub!
