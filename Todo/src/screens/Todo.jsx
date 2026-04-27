@@ -8,7 +8,7 @@ export default function Todo() {
   const dispatch = useDispatch();
 
   const [text, setText] = useState("");
-  const [isUpdate,setUpdate] = useState(false);
+  const [isUpdate,setUpdate] = useState({index:-1, status : false});
 
 
   return (
@@ -16,14 +16,17 @@ export default function Todo() {
      <div className="col-9">
        <div className="d-flex justify-content-around py-5 rounded shadow m-3">
         <input value={text} onChange={(e)=>setText(e.target.value)}  placeholder="Workout, Read Book etc.." className="w-50 p-3" type="text"/>
-         <button onClick={()=>dispatch(addTodo({text,status:false}))} className={`btn ${isUpdate?"btn-warning": "btn-primary"} w-25`}>{isUpdate?"updateTodo":"Add Todo"}</button>
+         <button onClick={()=>dispatch(addTodo({text,status:false}))} className={`btn ${isUpdate.status ? "btn-warning" : "btn-primary"} w-25`}>{isUpdate.status ? "UpdateTodo" : "Add Todo"}</button>
       </div>
       <div style={{height:"600px"}} className="d-flex flex-column p-3 m-3 mt-5 rounded shadow">
         {
           todoList.map((todo,i)=>  <div key={i} className={`p-4 m-2 rounded shadow d-flex justify-content-between border ${todo.status?"border-success" :"border-danger" }`}>
              <span className="fs-5">{todo.text}</span>
               <span>
-                 <button onClick={()=>setText(todo.text)} className="btn btn-warning mx-2">Edit</button>
+                 <button onClick={()=>{
+                  setText(todo.text)
+                  setUpdate({index:i,status:true})
+                 }} className="btn btn-warning mx-2">Edit</button>
                  <button onClick={()=>dispatch(removeTodo(i))} className="btn btn-danger mx-2">Remove</button>
                  <button className="btn btn-success mx-2">Done</button>
             </span>

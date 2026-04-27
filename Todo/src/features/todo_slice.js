@@ -14,9 +14,10 @@ export const todoSlice = createSlice({
     removeTodo: (state, actions) => {
       state.value.splice(actions.payload, 1);
     },
-   
-    // eslint-disable-next-line no-unused-vars
-    updateTodo: (state,actions) => {},
+
+    updateTodo: (state, actions) => {
+      state.value[actions.payload.index] = actions.payload.text;
+    },
   },
 });
 
