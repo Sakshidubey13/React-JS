@@ -1,3 +1,6 @@
+#Demo Video
+https://github.com/user-attachments/assets/542a2787-8fc5-4498-9aec-97f1caee26f8
+
 # 📝 Todo App (React + Redux Toolkit)
 
 A simple and clean Todo Application built using **React** and **Redux Toolkit**.
@@ -15,10 +18,6 @@ This project demonstrates core concepts of state management, CRUD operations, an
 * ⚡ Centralized state management using Redux Toolkit
 
 ---
-##Video
-https://github.com/user-attachments/assets/542a2787-8fc5-4498-9aec-97f1caee26f8
-
-
 ## 🧠 Concepts Used
 
 * React Functional Components
