@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTodo, removeTodo, updateTodo } from "../features/todo_slice.js";
+import { markDone } from "../features/todo_slice.js";
 
 export default function Todo() {
   const todoList = useSelector((state) => state.todo.value); // first todo  (todo: todoReducer,=> here is store.js) and second todo decrale for ( value: []=> here is todo_slice.js)
@@ -35,7 +36,7 @@ export default function Todo() {
                   setUpdate({index:i,status:true})
                  }} className="btn btn-warning mx-2">Edit</button>
                  <button onClick={()=>dispatch(removeTodo(i))} className="btn btn-danger mx-2">Remove</button>
-                 <button className="btn btn-success mx-2">Done</button>
+                 <button onClick={()=>dispatch(markDone(i))}  className="btn btn-success mx-2">Done</button>
             </span>
         </div>)
         }

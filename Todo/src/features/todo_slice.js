@@ -16,10 +16,20 @@ export const todoSlice = createSlice({
     },
 
     updateTodo: (state, actions) => {
-      state.value[actions.payload.index] = { text: actions.payload.text,status:false };
+      state.value[actions.payload.index] = {
+        text: actions.payload.text,
+        status: false,
+      };
+    },
+
+    markDone: (state, actions) => {
+      const index = actions.payload;
+      if (state.value[index]) {
+        state.value[index].status = true;
+      }
     },
   },
 });
 
 export default todoSlice.reducer;
-export const { addTodo, removeTodo, updateTodo } = todoSlice.actions;
+export const { addTodo, removeTodo, updateTodo, markDone } = todoSlice.actions;
