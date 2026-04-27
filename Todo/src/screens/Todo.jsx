@@ -18,9 +18,13 @@ export default function Todo() {
       </div>
 
       <div style={{height:"600px"}} className="d-flex flex-column p-3 m-3 mt-5 rounded shadow">
-        <div className="p-4 m-2 rounded shadow ">
+        <div className="p-4 m-2 rounded shadow d-flex justify-content-between border border-success">
           
             <span className="fs-5">Workout at 5pm</span>
+            <span>
+              <button className="btn btn-warning">Edit</button>
+                <button className="btn btn-danger">Remove</button>
+            </span>
           
         </div>
 
