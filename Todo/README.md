@@ -1,16 +1,130 @@
-# React + Vite
+# 📝 Todo App (React + Redux Toolkit)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![GitHub repo size](https://img.shields.io/github/repo-size/Sakshidubey13/React-JS)
+![GitHub stars](https://img.shields.io/github/stars/Sakshidubey13/React-JS?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Sakshidubey13/React-JS?style=social)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+🔗 *Coming Soon*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A modern **Todo Application** built using **React** and **Redux Toolkit** to manage tasks efficiently.
+This project focuses on clean UI, structured state management, and real-world development practices.
+
+---
+
+## ✨ Features
+
+* ➕ Add new tasks
+* ✏️ Edit/update tasks
+* ❌ Delete tasks
+* ✅ Mark tasks as completed
+* 🎨 Dynamic UI (border color changes based on status)
+* ⚡ Global state management with Redux Toolkit
+
+---
+
+## 🧠 Tech Stack
+
+* ⚛️ React
+* 🧰 Redux Toolkit
+* 🟨 JavaScript (ES6+)
+* 🎨 Bootstrap
+
+---
+
+## 📂 Folder Structure
+
+```id="as8m2v"
+src/
+ ├── app/
+ │    └── store.js
+ ├── features/
+ │    └── todo_slice.js
+ ├── screens/
+ │    └── Todo.jsx
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## ⚙️ Installation
+
+```bash id="b0s7y1"
+# Clone the repository
+git clone https://github.com/Sakshidubey13/React-JS.git
+
+# Navigate into the project
+cd React-JS
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 🛠️ How It Works
+
+* Todos are stored in a centralized Redux store
+* Each todo contains:
+
+  * `text`
+  * `status` (true/false)
+* Clicking **Done** updates the status
+* UI automatically reflects state changes
+
+---
+
+## 🎯 UI Behavior
+
+| Status    | Border Color |
+| --------- | ------------ |
+| Pending   | 🔴 Red       |
+| Completed | 🟢 Green     |
+
+---
+
+## 📸 Screenshots
+
+*Add your screenshots here*
+*(Tip: Upload image to GitHub → copy link → paste here)*
+
+---
+
+## 📈 Future Enhancements
+
+* 🔍 Search functionality
+* 📂 Filter (All / Completed / Pending)
+* 💾 LocalStorage support
+* 🌙 Dark mode
+* 🎨 Advanced UI/UX improvements
+
+---
+
+## 👩‍💻 Author
+
+**Sakshi Dubey**
+🔗 GitHub: https://github.com/Sakshidubey13
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please give it a ⭐ on GitHub!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
