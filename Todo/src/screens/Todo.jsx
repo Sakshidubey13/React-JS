@@ -9,20 +9,21 @@ export default function Todo() {
 
   //  eslint-disable-next-line no-unused-vars
   const [text, setText] = useState("");
+  
   return (
     <div className="container d-flex justify-content-center">
      <div className="col-9">
        <div className="d-flex justify-content-around py-5 rounded shadow m-3">
-        <input onChange={(e)=>setText(e.target.value)}  placeholder="Workout, Read Book etc.." className="w-50 p-3" type="text"/>
-         <button onChange={()=>dispatch(addTodo(text,status:false))} className="btn btn-primary w-25">Add Todo</button>
+        <input value={text} onChange={(e)=>setText(e.target.value)}  placeholder="Workout, Read Book etc.." className="w-50 p-3" type="text"/>
+         <button onClick={()=>dispatch(addTodo({text,status:false}))} className="btn btn-primary w-25">Add Todo</button>
       </div>
       <div style={{height:"600px"}} className="d-flex flex-column p-3 m-3 mt-5 rounded shadow">
         {
-          todoList.map((todo,i)=>  <div key={i} className="p-4 m-2 rounded shadow d-flex justify-content-between border border-danger">
-             <span className="fs-5">Workout at 5pm</span>
+          todoList.map((todo,i)=>  <div key={i} className={`p-4 m-2 rounded shadow d-flex justify-content-between border ${todo.status?"border-success" :"border-danger" }`}>
+             <span className="fs-5">{todo.text}</span>
               <span>
-                 <button className="btn btn-warning mx-2">Edit</button>
-                 <button className="btn btn-danger mx-2">Remove</button>
+                 <button onClick={()=>setText(todo.text)} className="btn btn-warning mx-2">Edit</button>
+                 <button onClick={()=>dispatch(removeTodo(i))} className="btn btn-danger mx-2">Remove</button>
                  <button className="btn btn-success mx-2">Done</button>
             </span>
         </div>)
