@@ -15,7 +15,6 @@ export default function Todo() {
         <input className="w-50" type="text"/>
          <button className="btn btn-primary w-25">Add Todo</button>
       </div>
-
       <div>
 
       </div>
