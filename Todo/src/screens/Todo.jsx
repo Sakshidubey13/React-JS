@@ -7,7 +7,7 @@ export default function Todo() {
   const todoList = useSelector((state) => state.todo.value); // first todo  (todo: todoReducer,=> here is store.js) and second todo decrale for ( value: []=> here is todo_slice.js)
   const dispatch = useDispatch();
 
-  // eslint-disable-next-line no-unused-vars
+  //  eslint-disable-next-line no-unused-vars
   const [text, setText] = useState("");
   return (
     <div className="container">
