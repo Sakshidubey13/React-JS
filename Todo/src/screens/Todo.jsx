@@ -36,8 +36,7 @@ export default function Todo() {
                  <button onClick={()=>dispatch(removeTodo(i))} className="btn btn-danger mx-2">Remove</button>
                  <button onClick={()=>dispatch(markDone(i))}  className="btn btn-success mx-2">Done</button>
             </span>
-        </div>)
-        }
+        </div>)}
       </div>
      </div>
     </div>
