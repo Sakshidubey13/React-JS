@@ -9,28 +9,6 @@ export default function Todo() {
   const dispatch = useDispatch();
   const [text, setText] = useState("");
   const [isUpdate,setUpdate] = useState({index:-1, status : false});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div className="container d-flex justify-content-center">
      <div className="col-9">
