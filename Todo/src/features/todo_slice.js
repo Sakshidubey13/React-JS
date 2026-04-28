@@ -22,7 +22,6 @@ export const todoSlice = createSlice({
       };
     },
 
-    
     markDone: (state, actions) => {
       const index = actions.payload;
       if (state.value[index]) {
