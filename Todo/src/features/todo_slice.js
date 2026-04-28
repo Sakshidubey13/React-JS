@@ -28,7 +28,7 @@ export const todoSlice = createSlice({
         state.value[index].status = true;
       }
     },
-  },
+  }
 });
 
 export default todoSlice.reducer;
