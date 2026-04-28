@@ -31,15 +31,6 @@ export default function Todo() {
 
 
 
-
-
-
-
-
-
-
-
-
   return (
     <div className="container d-flex justify-content-center">
      <div className="col-9">
