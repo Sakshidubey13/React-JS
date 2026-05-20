@@ -101,6 +101,3 @@ http://localhost:3000
 
 ---
 
-# 👩‍💻 Author
-
-Made with ❤️ using Next.js and Tailwind CSS.
