@@ -1,13 +1,24 @@
 "use client";
 
-import { useContext, createContext } from "react";
+import { useContext, createContext, useState } from "react";
 
 const AppContext = createContext();
-export default function ContextProvider({childern}) {
+export default function ContextProvider({ childern }) {
+  const [user, setUser] = useState(null);
+  const login = (name) => {
+    setUser({ name });
+  };
+  const logout = () => {
+    setUser(null);
+  };
+
   return (
-    <div>
-      
-    </div>
-  )
+    <AppContext.Provider value={{ user, login, logout }}>
+      {children}
+    </AppContext.Provider>
+  );
 }
 
+const useApp = () => {
+  useContext(AppContext);
+};
