@@ -15,6 +15,14 @@ export default function Home() {
     setCount(count - 1);
   };
 
+  const multipication = () => {
+    setCount(count * 2);
+  };
+
+  const divide = () => {
+    setCount(count / 2);
+  };
+
   return (
     <div className="h-screen bg-amber-200 flex justify-center items-center flex-col">
       {/* Heading */}
@@ -41,6 +49,24 @@ export default function Home() {
         >
           <span className="absolute -left-20 top-0 h-full w-16 rotate-12 bg-white/30 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
           <span className="relative z-10">Decrement -</span>
+        </button>
+
+        {/* multipication  Button */}
+        <button
+          onClick={multipication}
+          className="group relative overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-r from-green-500 to-emerald-700 px-8 py-4 text-lg font-semibold text-white shadow-2xl transition-all duration-500 hover:scale-105"
+        >
+          <span className="absolute -left-20 top-0 h-full w-16 rotate-12 bg-white/30 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
+          <span className="relative z-10">Multipication * 2</span>
+        </button>
+
+        {/* divide Button */}
+        <button
+          onClick={divide}
+          className="group relative overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-r from-red-500 to-pink-700 px-8 py-4 text-lg font-semibold text-white shadow-2xl transition-all duration-500 hover:scale-105"
+        >
+          <span className="absolute -left-20 top-0 h-full w-16 rotate-12 bg-white/30 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
+          <span className="relative z-10">Divide / 2</span>
         </button>
       </div>
     </div>
