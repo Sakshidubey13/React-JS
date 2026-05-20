@@ -84,10 +84,8 @@ http://localhost:3000
 # 🧠 Concepts Used
 
 - React useState Hook
-- Event Handling
 - Functional Components
 - Tailwind CSS Styling
-- Next.js App Router
 
 ---
 
