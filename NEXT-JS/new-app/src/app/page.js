@@ -7,5 +7,7 @@ export default function Home() {
   useEffect(()=>{
     login("Aman")
   },[])
+
+  
   return <div>{user.name}</div>;
 }
