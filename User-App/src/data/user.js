@@ -1,5 +1,5 @@
 const allUser = [
-  [
+  
     {
       id: 1,
       name: "Leanne Graham",
@@ -230,7 +230,7 @@ const allUser = [
         bs: "target end-to-end models",
       },
     },
-  ],
+  
 ];
 
 export default allUser;
