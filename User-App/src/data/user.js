@@ -232,3 +232,5 @@ const allUser = [
     },
   ],
 ];
+
+export default allUser;
