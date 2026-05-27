@@ -47,8 +47,6 @@ const User = () => {
         //  temp.pop();
         //  setUsers(temp);
         setUsers(users.slice(0,-1))
-
-
         }}>
         Delete
       </button>
