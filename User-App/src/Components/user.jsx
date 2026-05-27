@@ -14,13 +14,13 @@ const User = () => {
           <p>{user.email}</p>
           <button
             onClick={() => {
-            //  const temp = [...users];
-            //  temp.splice(i, 1);
-            //  setUsers(temp);
+              const temp = [...users];
+              temp.splice(i, 1);
+              setUsers(temp);
      
             //  setUsers([users.filter,{i}])
 
-            setUsers([...users.slice(i+1)])
+            //setUsers([...users.slice(i+1)])
             }}>
             Remove
           </button>
