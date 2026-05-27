@@ -19,8 +19,7 @@ const User = () => {
             //  setUsers(temp);
      
             //  setUsers([users.filter,{i}])
-            }}
-          >
+            }}>
             Remove
           </button>
         </div>
