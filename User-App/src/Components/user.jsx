@@ -37,8 +37,7 @@ const User = () => {
         //  temp.push({ name: "Sakshi", email: "sakshiid13@gmail.com" });
         //  setUsers(temp);
          setUsers([...users,{name:"Sakshi",email:"sakshiid13@gmail.com"}])
-        }}
-      >
+        }}>
         Add
       </button>
 
@@ -48,6 +47,8 @@ const User = () => {
         //  temp.pop();
         //  setUsers(temp);
         setUsers(users.slice(0,-1))
+
+
         }}
       >
         Delete
