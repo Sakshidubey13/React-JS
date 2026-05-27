@@ -8,10 +8,10 @@ const User =() =>{
        {
     
         allUser.map((user,i)=><div key={i}>
-            {/*<hr/>*/}
+            <hr/>
             <h3>{user.name}</h3>
             <p>{user.email}</p>
-            <hr/>
+            {/*<hr/>*/}
         </div>)
        }
        {/*{allUser.length}*/}
