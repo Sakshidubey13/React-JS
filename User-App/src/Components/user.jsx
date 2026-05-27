@@ -4,13 +4,17 @@ import allUser from "../data/user.js";
 
 const User =() =>{
     return <div>
-        {/*<h1>All USers</h1>
+        <h1>All USers</h1>
        {
-        allUser.map(User)=><div>
-
-        </div>
-       }*/}
-       {allUser.length}
+    
+        allUser.map((user)=><div>
+            {/*<hr/>*/}
+            <h3>{user.name}</h3>
+            <p>{user.email}</p>
+            <hr/>
+        </div>)
+       }
+       {/*{allUser.length}*/}
     </div>;
 }
 
