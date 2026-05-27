@@ -7,7 +7,7 @@ const User =() =>{
         <h1>All USers</h1>
        {
     
-        allUser.map((user)=><div>
+        allUser.map((user)=><div key={i}>
             {/*<hr/>*/}
             <h3>{user.name}</h3>
             <p>{user.email}</p>
