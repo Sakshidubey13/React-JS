@@ -49,8 +49,7 @@ const User = () => {
         setUsers(users.slice(0,-1))
 
 
-        }}
-      >
+        }}>
         Delete
       </button>
     </div>
