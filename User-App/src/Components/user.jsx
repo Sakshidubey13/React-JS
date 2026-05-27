@@ -18,7 +18,7 @@ const User = () => {
             //  temp.splice(i, 1);
             //  setUsers(temp);
      
-              setUsers([...users,{i}])
+            //  setUsers([users.filter,{i}])
             }}
           >
             Remove
@@ -39,9 +39,10 @@ const User = () => {
 
       <button
         onClick={() => {
-          const temp = [...users];
-          temp.pop();
-          setUsers(temp);
+        //  const temp = [...users];
+        //  temp.pop();
+        //  setUsers(temp);
+        setUsers(users.slice(0,-1))
         }}
       >
         Delete
