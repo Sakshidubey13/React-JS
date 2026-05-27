@@ -14,9 +14,11 @@ const User = () => {
           <p>{user.email}</p>
           <button
             onClick={() => {
-              const temp = [...users];
-              temp.splice(i, 1);
-              setUsers(temp);
+            //  const temp = [...users];
+            //  temp.splice(i, 1);
+            //  setUsers(temp);
+     
+              setUsers([...users,{i}])
             }}
           >
             Remove
@@ -26,10 +28,10 @@ const User = () => {
       {/*{allUser.length} find length any json data */}
       <button
         onClick={() => {
-          const temp = [...users];
-          temp.push({ name: "Sakshi", email: "sakshiid13@gmail.com" });
-          setUsers(temp);
-          //setUsers([...users,{name:"Sakshi",email:"sakshiid13@gmail.com"}])
+        //  const temp = [...users];
+        //  temp.push({ name: "Sakshi", email: "sakshiid13@gmail.com" });
+        //  setUsers(temp);
+         setUsers([...users,{name:"Sakshi",email:"sakshiid13@gmail.com"}])
         }}
       >
         Add
