@@ -19,6 +19,8 @@ const User = () => {
             //  setUsers(temp);
      
             //  setUsers([users.filter,{i}])
+
+            setUsers([...users.slice(i+1)])
             }}>
             Remove
           </button>
