@@ -16,6 +16,7 @@ const User = () => {
             onClick={() => {
               const temp = [...users];
               temp.splice(i, 1);
+              
               setUsers(temp);
      
             //  setUsers([users.filter,{i}])
